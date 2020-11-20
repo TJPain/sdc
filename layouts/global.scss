@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-block-end: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+sdc-color {
+  color: #e1851b;
+}
+
+sdc-bg-color {
+  background-color: #e1851b;
+}
