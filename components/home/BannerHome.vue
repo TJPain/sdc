@@ -29,7 +29,7 @@ export default {
 }
 
 .banner-home__img-container {
-  min-height: calc(100% - 80px);
+  min-height: 720px;
   height: 90%;
   min-width: calc(100% - 80px);
   width: 90%;
