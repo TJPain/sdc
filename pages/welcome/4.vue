@@ -1,20 +1,5 @@
 <template>
-  <div>
-    <div style="position: relative; padding-top: 56.25%">
-      <iframe
-        src="https://iframe.videodelivery.net/8a596d3a1428d36848b133bf5321de0c?autoplay=true"
-        style="
-          border: none;
-          position: absolute;
-          top: 0;
-          height: 100%;
-          width: 100%;
-        "
-        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-        allowfullscreen="true"
-      ></iframe>
-    </div>
-  </div>
+<div style="position: relative; padding-top: 56.25%;"><iframe src="https://iframe.videodelivery.net/8a596d3a1428d36848b133bf5321de0c?autoplay=true" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
 </template>
 
 <script>
