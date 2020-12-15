@@ -1,9 +1,33 @@
 <template>
   <div class="banner-home">
     <div class="banner-home__img-container">
-      <div class="banner-home__text-container">
-        <h2 class="display-3 text-center banner-home__title">Secret drinks club</h2>
-        <p class="headline text-center banner-home__text">coming soon</p>
+      <div class="banner-home__img-filter">
+        <div class="banner-home__corner top-left"></div>
+        <div class="banner-home__corner top-right"></div>
+        <div class="banner-home__corner bottom-left"></div>
+        <div class="banner-home__corner bottom-right"></div>
+        <div class="banner-home__inner-border">
+          <div class="banner-home__content-container">
+            <div class="banner-home__text-container">
+              <h2 class="banner-home__title">
+                <!-- <span class="typed-text">{{ typeValue }}</span> -->
+                <span class="typed-text"
+                  >Welcome to the Secret Drinks Club</span
+                >
+                <span class="cursor" :class="{ typing: typeStatus }"
+                  >&nbsp;</span
+                >
+              </h2>
+            </div>
+            <div class="banner-home__logo-container">
+              <img
+                class="banner-home__logo"
+                src="~@/assets/images/brand/sdc-full-logo-small.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -12,6 +36,61 @@
 <script>
 export default {
   name: 'BannerHome',
+  data() {
+    return {
+      typeValue: '',
+      typeStatus: false,
+      typeArray: [
+        'Discover amazing drinks brands',
+        'Delivered to your door',
+        'Welcome to the Secret Drinks Club',
+      ],
+      typingSpeed: 100,
+      erasingSpeed: 100,
+      newTextDelay: 2000,
+      typeArrayIndex: 0,
+      charIndex: 0,
+    }
+  },
+  methods: {
+    typeText() {
+      if (this.charIndex < this.typeArray[this.typeArrayIndex].length) {
+        if (!this.typeStatus) this.typeStatus = true
+
+        this.typeValue += this.typeArray[this.typeArrayIndex].charAt(
+          this.charIndex
+        )
+        this.charIndex += 1
+
+        setTimeout(this.typeText, this.typingSpeed)
+      } else {
+        this.typeStatus = false
+        setTimeout(this.eraseText, this.newTextDelay)
+      }
+    },
+    eraseText() {
+      if (this.charIndex > 0) {
+        if (!this.typeStatus) this.typeStatus = true
+
+        this.typeValue = this.typeArray[this.typeArrayIndex].substring(
+          0,
+          this.charIndex - 1
+        )
+        this.charIndex -= 1
+        setTimeout(this.eraseText, this.erasingSpeed)
+      } else {
+        this.typeStatus = false
+        this.typeArrayIndex += 1
+        if (this.typeArrayIndex >= this.typeArray.length)
+          this.typeArrayIndex = 0
+
+        setTimeout(this.typeText, this.typingSpeed + 1000)
+      }
+    },
+  },
+  created() {
+    setTimeout(this.typeText, this.newTextDelay + 200)
+  },
   props: {
     img: {
       type: String,
@@ -29,34 +108,211 @@ export default {
 }
 
 .banner-home__img-container {
-  min-height: 720px;
+  min-height: 765px;
   height: 90%;
   min-width: calc(100% - 80px);
-  width: 90%;
-  margin: 40px auto 40px auto;
+  width: 100%;
+  margin: auto;
   background-color: black;
   box-shadow: inset 0 0 5em 1em #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(~@/assets/images/home/secret-drinks-club.jpg);
+}
+
+.banner-home__img-filter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(41, 41, 41, 0.85);
+  border: #907960 solid 10px;
+  position: relative;
+}
+
+.banner-home__corner {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+}
+
+.top-left {
+  left: 0;
+  top: 0;
+  border-bottom: #907960 solid 10px;
+  border-right: #907960 solid 10px;
+}
+
+.top-right {
+  right: 0;
+  top: 0;
+  border-bottom: #907960 solid 10px;
+  border-left: #907960 solid 10px;
+}
+
+.bottom-left {
+  left: 0;
+  bottom: 0;
+  border-top: #907960 solid 10px;
+  border-right: #907960 solid 10px;
+}
+
+.bottom-right {
+  right: 0;
+  bottom: 0;
+  border-top: #907960 solid 10px;
+  border-left: #907960 solid 10px;
+}
+
+.banner-home__inner-border {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border: #907960 solid 3px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.banner-home__content-container {
+  width: 80%;
+  max-width: 1050px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .banner-home__text-container {
-    max-width: 90%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-home__title {
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 7px rgba(0,0,0,1);
+  font-size: 65px;
+  margin-top: 30px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+  font-family: 'Lora', serif;
+
+  span.typed-text {
+    color: #fff;
+  }
+
+  span.cursor {
+    display: inline-block;
+    margin-left: 3px;
+    width: 4px;
+    background-color: #fff;
+    animation: cursorBlink 1s infinite;
+  }
+
+  span.cursor.typing {
+    animation: none;
+  }
+}
+
+@keyframes cursorBlink {
+  49% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
 }
 
 .banner-home__text {
-    text-shadow: 2px 2px 7px rgba(0,0,0,1);
-    font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+  font-family: 'Open Sans', sans-serif;
 }
 
+.banner-home__logo-container {
+  width: 30%;
+  height: auto;
+}
+
+.banner-home__logo {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1238px) {
+  .banner-home__title {
+    font-size: 58px;
+  }
+}
+
+@media only screen and (max-width: 1114px) {
+  .banner-home {
+    min-height: 600px;
+  }
+
+  .banner-home__img-container {
+    min-height: 600px;
+  }
+
+  .banner-home__logo-container {
+    width: 25%;
+  }
+
+  .banner-home__text-container {
+    width: 70%;
+  }
+
+  .banner-home__title[data-v-76b26790] {
+    margin-top: 15px;
+  }
+
+  .banner-home__title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 838px) {
+  .banner-home__title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .banner-home__content-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-home__content-container {
+    width: 95%;
+  }
+
+  .banner-home__logo-container {
+    width: 180px;
+  }
+
+  .banner-home__text-container {
+    width: 85%;
+  }
+
+  .banner-home__title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .banner-home__text-container {
+    width: 90%;
+  }
+
+  .banner-home__title {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 305px) {
+  .banner-home__title {
+    font-size: 35px;
+  }
+}
 </style>

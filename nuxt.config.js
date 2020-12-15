@@ -17,11 +17,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=Lora&family=Open+Sans&display=swap'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
       }
     ]
   },
