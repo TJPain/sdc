@@ -1,5 +1,5 @@
 <template>
-  <BannerHome />
+    <BannerHome />
 </template>
 
 <script>
@@ -8,7 +8,7 @@ import BannerHome from '@/components/home/BannerHome'
 export default {
   name: 'Home',
   components: {
-      BannerHome,
+    BannerHome,
   },
   head() {
     return {
@@ -84,12 +84,14 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://res.cloudinary.com/drmmjkhp8/image/upload/v1605895145/OG%20images/sdc-og-img1_vstbsh.png',
+          content:
+            'https://res.cloudinary.com/drmmjkhp8/image/upload/v1605895145/OG%20images/sdc-og-img1_vstbsh.png',
         },
         {
           hid: 'og:image2',
           property: 'og:image',
-          content: 'https://res.cloudinary.com/drmmjkhp8/image/upload/v1605895145/OG%20images/sdc-og-img2_w4cz7y.png',
+          content:
+            'https://res.cloudinary.com/drmmjkhp8/image/upload/v1605895145/OG%20images/sdc-og-img2_w4cz7y.png',
         },
         {
           hid: 'twitter:image',
@@ -104,5 +106,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.home {
+  height: auto;
+}
 </style>

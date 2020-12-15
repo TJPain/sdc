@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h2 class="">Video 1</h2>
-  </div>
+<div style="position: relative; padding-top: 56.25%;"><iframe src="https://iframe.videodelivery.net/1bb45584724c4709cffe013f0cc5b5dd?autoplay=true" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
 </template>
 
 <script>
