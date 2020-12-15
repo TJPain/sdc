@@ -10,10 +10,7 @@
           <div class="banner-home__content-container">
             <div class="banner-home__text-container">
               <h2 class="banner-home__title">
-                <!-- <span class="typed-text">{{ typeValue }}</span> -->
-                <span class="typed-text"
-                  >Welcome to the Secret Drinks Club</span
-                >
+                <span class="typed-text">{{ typeValue }}</span>
                 <span class="cursor" :class="{ typing: typeStatus }"
                   >&nbsp;</span
                 >
