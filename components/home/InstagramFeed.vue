@@ -9,7 +9,7 @@
           scrolling="no"
           allowtransparency="true"
           class="lightwidget-widget"
-          style="width: 100%; border: 0; overflow: hidden"
+          style="width: 100%; border: 0; overflow: hidden; height: 474px;"
         ></iframe>
         <img
           src="@/assets/images/icons/sdc-bowtie.png"
