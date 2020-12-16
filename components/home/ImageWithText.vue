@@ -285,6 +285,11 @@ export default {
     padding: 10px;
     margin-bottom: 20px;
   }
+
+  .image-text__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
