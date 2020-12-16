@@ -39,7 +39,7 @@ export default {
       typeStatus: false,
       typeArray: [
         'Discover amazing drinks brands',
-        'Delivered to your door',
+        'Delivered to your door ',
         'Welcome to the Secret Drinks Club',
       ],
       typingSpeed: 100,
