@@ -4,13 +4,48 @@
       class="image-text__content-container"
       :class="{ reverse: reverse, bottomMargin: bottomMargin }"
     >
-      <div class="image-text__border" :class="{ reverse: reverse }"></div>
-      <div v-if="!reverse" class="image-text__corner top-left"></div>
-      <div v-if="!reverse" class="image-text__inner-border-left"></div>
-      <div v-if="reverse" class="image-text__corner top-right"></div>
-      <div v-if="reverse" class="image-text__inner-border-right"></div>
+      <div
+        class="image-text__border"
+        :class="{ reverse: reverse }"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="200"
+      ></div>
+      <div
+        v-if="!reverse"
+        class="image-text__corner top-left"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="200"
+      ></div>
+      <div
+        v-if="!reverse"
+        class="image-text__inner-border-left"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="300"
+      ></div>
+      <div
+        v-if="reverse"
+        class="image-text__corner top-right"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="200"
+      ></div>
+      <div
+        v-if="reverse"
+        class="image-text__inner-border-right"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="300"
+      ></div>
       <div class="image-text__contents-wrap" :class="{ reverse: reverse }">
-        <div class="image-text__video-img-container">
+        <div
+          class="image-text__video-img-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="450"
+        >
           <div v-if="video.length > 0" class="image-text__video-container">
             <div style="position: relative; padding-top: 56.25%">
               <iframe
@@ -32,16 +67,31 @@
           </div>
         </div>
         <div class="image-text__text-container">
-          <h2 v-if="title.length > 0" class="image_with_text__section_title">
+          <h2
+            v-if="title.length > 0"
+            class="image_with_text__section_title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="600"
+          >
             {{ title }}
           </h2>
           <!-- eslint-disable-next-line vue/no-v-html -->
-          <div class="image-text__text" v-html="text"></div>
+          <div
+            class="image-text__text"
+            v-html="text"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="675"
+          ></div>
           <a
             v-if="button"
             href="https://www.indiegogo.com/projects/the-secret-drinks-club--2#/"
             target="_blank"
             class="image-text__button"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="200"
             >Join the club</a
           >
         </div>
