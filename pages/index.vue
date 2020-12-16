@@ -14,7 +14,13 @@
       :img-src="imageWithText2.imgSrc"
       :img-alt="imageWithText2.imgAlt"
       :reverse="imageWithText2.reverse"
-      :bottom-margin="imageWithText2.bottomMargin"
+    />
+    <ImageWithText
+      :text="imageWithText3.text"
+      :title="imageWithText3.title"
+      :img-src="imageWithText3.imgSrc"
+      :img-alt="imageWithText3.imgAlt"
+      :bottom-margin="imageWithText3.bottomMargin"
     />
   </section>
 </template>
@@ -34,7 +40,7 @@ export default {
       imageWithText: {
         // Ensure that images are in the ~/static/ folder to make them accessible
         title: 'What is the Secret Drinks Club?',
-        imgSrc: '/home/secret-drinks-club-1.jpg',
+        imgSrc: '/home/secret-drinks-club-2.jpg',
         imgAlt: `A picture of the founders of the Secret Drinks Club`,
         text: `<p>The Secret Drinks Club is here to bring you a completely new, exciting and interactive drinks experience! Delivered directly to your door, we have worked with an up and coming drinks brand to bring you on a unique journey with us.</p><p>These brands have spirits and drinks which taste incredible and we never know about them because they don&#39;t sell through supermarkets and we are unlikely to find them in the mass of online sellers. The big secret? There is way more to the drinks industry than the supermarket…</p><p>That’s where we come in.</p>`,
         video: '',
@@ -47,6 +53,21 @@ export default {
         text: `<p>We (Matt and Max) founded the Secret Drinks Club out of the frustration that there is hundreds (if not thousands) of exciting and interesting drinks brands out there which consumers like us have no knowledge of.</p><p>The Secret Drinks Club is not a boujie, hipster, old boys club from the 1950s! And if we are honest we don&#39;t really know what &#39;craft&#39; and &#39;artisan&#39; drinks are.. other than more expensive! We are a small company that is passionate about introducing people to exciting new, small or niche spirits. More importantly, we want to connect you directly to the brands so you experience it the way they intended!</p>`,
         video: '',
         reverse: true,
+      },
+      imageWithText3: {
+        // Ensure that images are in the ~/static/ folder to make them accessible
+        title: 'So what do I get?',
+        imgSrc: '/home/secret-drinks-club-1.jpg',
+        imgAlt: `A picture of the founders of the Secret Drinks Club`,
+        text: `<ul>
+        <li>Full 70cl bottle of spirit from a new brand that we guarantee you will love</li>
+        <li>A range of mixers</li>
+        <li>A unique and interactive guided experience with industry experts who introduce you to the brand, the drink, its heritage and most importantly, how to enjoy it!</li>
+        <li>Tasting masterclass and three new ways to enjoy the spirit</li>
+        <li>A few surprises (well, we are the secret drinks club after all)</li>
+        <li>All presented in a gift box suitable for everyone from your mum to your boss!</li>
+        </ul>`,
+        video: '',
         bottomMargin: true,
       },
     }

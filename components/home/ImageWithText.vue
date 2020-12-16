@@ -37,6 +37,12 @@
           </h2>
           <!-- eslint-disable-next-line vue/no-v-html -->
           <div class="image-text__text" v-html="text"></div>
+          <a
+            href="https://www.indiegogo.com/projects/the-secret-drinks-club--2#/"
+            target="_blank"
+            class="image-text__button"
+            >Join the club</a
+          >
         </div>
       </div>
     </div>
@@ -190,7 +196,7 @@ export default {
 .image-text__text-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .image-text__video-container {
@@ -235,6 +241,28 @@ export default {
   font-weight: 400;
   margin-block-end: 16px;
   color: #fff;
+}
+
+.image-text__button {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-block-end: 16px;
+  color: #fff;
+  justify-content: center;
+  background: #f58439;
+  width: 210px;
+  height: 58px;
+  border-radius: 10px;
+}
+
+.image-text__button:hover {
+    box-shadow: 5px 10px 15px rgba(245,132,57,.15);
+    color: #edebe8;
 }
 
 @media only screen and (max-width: 800px) {
