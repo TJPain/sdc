@@ -15,15 +15,28 @@
           src="@/assets/images/icons/sdc-bowtie.png"
           alt="The Secret Drinks Club bow tie"
           class="instagram-feed__bowtie"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="400"
         />
       </div>
       <div class="instagram-feed__cta-container">
-        <h3 class="instagram-feed__title">Follow us</h3>
+        <h3
+          class="instagram-feed__title"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="200"
+        >
+          Follow us
+        </h3>
         <div class="instagram-feed__socials-container">
           <a
             href="https://www.instagram.com/secretdrinksclub/"
             class="instagram-feed__social-icon"
             target="_blank"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="250"
           >
             <img
               src="@/assets/images/icons/instagram.svg"
@@ -36,6 +49,9 @@
             target="_blank"
             class="instagram-feed__social-icon"
             style="margin-left: 16px"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="350"
           >
             <img
               src="@/assets/images/icons/facebook.svg"
@@ -166,13 +182,12 @@ export default {
   }
 }
 
-@media only screen and (max-width: 870px) { 
+@media only screen and (max-width: 870px) {
   .instagram-feed__bowtie {
     width: 100px;
     height: 52px;
     bottom: -15px;
     right: 10px;
   }
-
 }
 </style>
