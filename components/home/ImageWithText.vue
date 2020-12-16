@@ -82,7 +82,7 @@
             v-html="text"
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-delay="675"
+            data-aos-delay="625"
           ></div>
           <a
             v-if="button"
