@@ -38,6 +38,7 @@
           <!-- eslint-disable-next-line vue/no-v-html -->
           <div class="image-text__text" v-html="text"></div>
           <a
+            v-if="button"
             href="https://www.indiegogo.com/projects/the-secret-drinks-club--2#/"
             target="_blank"
             class="image-text__button"
@@ -79,6 +80,10 @@ export default {
       default: false,
     },
     bottomMargin: {
+      type: Boolean,
+      default: false,
+    },
+    button: {
       type: Boolean,
       default: false,
     },
@@ -261,8 +266,8 @@ export default {
 }
 
 .image-text__button:hover {
-    box-shadow: 5px 10px 15px rgba(245,132,57,.15);
-    color: #edebe8;
+  box-shadow: 5px 10px 15px rgba(245, 132, 57, 0.15);
+  color: #edebe8;
 }
 
 @media only screen and (max-width: 800px) {

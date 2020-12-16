@@ -21,6 +21,7 @@
       :img-src="imageWithText3.imgSrc"
       :img-alt="imageWithText3.imgAlt"
       :bottom-margin="imageWithText3.bottomMargin"
+      :button="imageWithText3.button"
     />
   </section>
 </template>
@@ -69,6 +70,7 @@ export default {
         </ul>`,
         video: '',
         bottomMargin: true,
+        button: true,
       },
     }
   },
