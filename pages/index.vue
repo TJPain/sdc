@@ -23,6 +23,7 @@
       :bottom-margin="imageWithText3.bottomMargin"
       :button="imageWithText3.button"
     />
+    <InstagramFeed />
   </section>
 </template>
 
