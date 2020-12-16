@@ -8,8 +8,8 @@
           src="https://cdn.lightwidget.com/widgets/8329c9d2d2ae5485b5e4f3f1d3a21963.html"
           scrolling="no"
           allowtransparency="true"
-          class="lightwidget-widget"
-          style="width: 100%; border: 0; overflow: hidden; height: 560px;"
+          class="lightwidget-widget instagram-feed__instagram-frame"
+          style="width: 100%; border: 0; overflow: hidden"
         ></iframe>
         <img
           src="@/assets/images/icons/sdc-bowtie.png"
@@ -136,14 +136,40 @@ export default {
   z-index: 99;
 }
 
+.instagram-feed__instagram-frame {
+  height: 560px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .instagram-feed__instagram-frame {
+    height: 530px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .instagram-feed__instagram-frame {
+    height: 500px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .instagram-feed__bowtie {
     width: 120px;
     height: 62px;
   }
+
+  .instagram-feed__instagram-frame {
+    height: 480px;
+  }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 950px) {
+  .instagram-feed__instagram-frame {
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
   .instagram-feed {
     flex-direction: column-reverse;
   }
@@ -171,6 +197,10 @@ export default {
     justify-content: center;
     margin-bottom: 15px;
   }
+
+  .instagram-feed__instagram-frame {
+    height: 410px;
+  }
 }
 
 @media only screen and (max-width: 870px) {
@@ -180,14 +210,113 @@ export default {
     bottom: -15px;
     right: 10px;
   }
+
+  .instagram-feed__instagram-frame {
+    height: 550px;
+  }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 850px) {
+  .instagram-feed__instagram-frame {
+    height: 520px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .instagram-feed__instagram-frame {
+    height: 490px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .instagram-feed__instagram-frame {
+    height: 460px;
+  }
+  .instagram-feed__bowtie {
+    bottom: -5px;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  .instagram-feed__instagram-frame {
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .instagram-feed__instagram-frame {
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  .instagram-feed__instagram-frame {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .instagram-feed__instagram-frame {
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .instagram-feed__instagram-frame {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .instagram-feed__instagram-frame {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .instagram-feed__instagram-frame {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .instagram-feed__instagram-frame {
+    height: 275px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .instagram-feed__instagram-frame {
+    height: 255px;
+  }
+
   .instagram-feed__bowtie {
     width: 100px;
     height: 52px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .instagram-feed__instagram-frame {
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .instagram-feed__instagram-frame {
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .instagram-feed__instagram-frame {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .instagram-feed__bowtie {
     bottom: -15px;
-    right: 10px;
   }
 }
 </style>
