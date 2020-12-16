@@ -100,12 +100,12 @@ export default {
 <style lang="scss" scoped>
 .banner-home {
   width: 100%;
-  min-height: 800px;
+  min-height: 710px;
   background-color: #fff;
 }
 
 .banner-home__img-container {
-  min-height: 765px;
+  min-height: 710px;
   height: 90%;
   min-width: calc(100% - 80px);
   width: 100%;
@@ -118,6 +118,7 @@ export default {
 }
 
 .banner-home__img-filter {
+  min-height: 710px;
   height: 100%;
   width: 100%;
   background-color: rgba(41, 41, 41, 0.85);
@@ -160,6 +161,7 @@ export default {
 }
 
 .banner-home__inner-border {
+  min-height: 710px;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   border: #907960 solid 3px;
@@ -242,11 +244,10 @@ export default {
 }
 
 @media only screen and (max-width: 1114px) {
-  .banner-home {
-    min-height: 600px;
-  }
-
-  .banner-home__img-container {
+  .banner-home,
+  .banner-home__img-container,
+  .banner-home__img-filter,
+  .banner-home__inner-border {
     min-height: 600px;
   }
 
@@ -258,7 +259,7 @@ export default {
     width: 70%;
   }
 
-  .banner-home__title[data-v-76b26790] {
+  .banner-home__title {
     margin-top: 15px;
   }
 
@@ -271,13 +272,23 @@ export default {
   .banner-home__title {
     font-size: 42px;
   }
+
+  .banner-home__title {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 730px) {
   .banner-home__content-container {
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .banner-home__title {
+    text-align: center;
+    min-height: 130px;
   }
 
   .banner-home__content-container {
@@ -297,6 +308,32 @@ export default {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .banner-home__text-container {
+    width: 260px;
+    margin: auto;
+  }
+  
+  .banner-home,
+  .banner-home__img-container,
+  .banner-home__img-filter,
+  .banner-home__inner-border {
+    min-height: 550px;
+  }
+
+  .banner-home__title {
+    min-height: 260px;
+  }
+
+  .banner-home__title {
+    font-size: 40px;
+  }
+
+  .banner-home__content-container {
+    padding-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   .banner-home__text-container {
     width: 90%;
@@ -305,6 +342,11 @@ export default {
   .banner-home__title {
     font-size: 38px;
   }
+  
+  .banner-home__content-container {
+    padding-top: 25px;
+  }
+
 }
 
 @media only screen and (max-width: 305px) {
