@@ -15,9 +15,9 @@
           src="@/assets/images/icons/sdc-bowtie.png"
           alt="The Secret Drinks Club bow tie"
           class="instagram-feed__bowtie"
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-once="true"
-          data-aos-delay="400"
+          data-aos-delay="300"
         />
       </div>
       <div class="instagram-feed__cta-container">

@@ -24,18 +24,21 @@
       :button="imageWithText3.button"
     />
     <InstagramFeed />
+    <SignUpForm id="join"/>
   </section>
 </template>
 
 <script>
 import BannerHome from '@/components/home/BannerHome'
 import ImageWithText from '@/components/home/ImageWithText'
+import SignUpForm from '@/components/home/SignUpForm'
 
 export default {
   name: 'Home',
   components: {
     BannerHome,
     ImageWithText,
+    SignUpForm,
   },
   data() {
     return {

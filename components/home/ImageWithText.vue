@@ -7,35 +7,35 @@
       <div
         class="image-text__border"
         :class="{ reverse: reverse }"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-once="true"
         data-aos-delay="200"
       ></div>
       <div
         v-if="!reverse"
         class="image-text__corner top-left"
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-once="true"
         data-aos-delay="200"
       ></div>
       <div
         v-if="!reverse"
         class="image-text__inner-border-left"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-once="true"
         data-aos-delay="300"
       ></div>
       <div
         v-if="reverse"
         class="image-text__corner top-right"
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-once="true"
         data-aos-delay="200"
       ></div>
       <div
         v-if="reverse"
         class="image-text__inner-border-right"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-once="true"
         data-aos-delay="300"
       ></div>
@@ -86,8 +86,7 @@
           ></div>
           <a
             v-if="button"
-            href="https://www.indiegogo.com/projects/the-secret-drinks-club--2#/"
-            target="_blank"
+            href="/#join"
             class="image-text__button"
             data-aos="fade-up"
             data-aos-once="true"
