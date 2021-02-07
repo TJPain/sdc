@@ -86,12 +86,12 @@
           ></div>
           <a
             v-if="button"
-            href="/#join"
+            href="https://shop.secretdrinksclub.com/collections/all"
             class="image-text__button"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="200"
-            >Join the club</a
+            >Get the box</a
           >
         </div>
       </div>
@@ -303,20 +303,23 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-block-end: 16px;
   color: #fff;
   justify-content: center;
+  border: solid 2px #f58439;
   background: #f58439;
   width: 210px;
   height: 58px;
   border-radius: 10px;
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
 }
 
 .image-text__button:hover {
-  box-shadow: 5px 10px 15px rgba(245, 132, 57, 0.15);
-  color: #edebe8;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 800px) {

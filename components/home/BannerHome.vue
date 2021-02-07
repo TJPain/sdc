@@ -238,8 +238,7 @@ export default {
   margin: 10px 5px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  font-weight: 500;
-  opacity: 0.8;
+  font-weight: 600;
   transition: background 0.25s ease-in-out;
   -moz-transition: background 0.25s ease-in-out;
   -webkit-transition: background 0.25s ease-in-out;

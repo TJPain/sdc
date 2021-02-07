@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" id="top">
     <BannerHome />
     <ImageWithText
       :text="imageWithText.text"
@@ -24,7 +24,8 @@
       :button="imageWithText3.button"
     />
     <InstagramFeed />
-    <SignUpForm id="join"/>
+    <SignUpForm id="join" />
+    <Footer />
   </section>
 </template>
 
@@ -32,6 +33,7 @@
 import BannerHome from '@/components/home/BannerHome'
 import ImageWithText from '@/components/home/ImageWithText'
 import SignUpForm from '@/components/home/SignUpForm'
+import Footer from '@/components/global/Footer'
 
 export default {
   name: 'Home',
@@ -39,6 +41,7 @@ export default {
     BannerHome,
     ImageWithText,
     SignUpForm,
+    Footer,
   },
   data() {
     return {
