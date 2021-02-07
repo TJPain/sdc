@@ -1,12 +1,7 @@
 <template>
   <section class="footer">
     <a class="footer__back-to-top" href="#top">
-      <img
-        class="footer__back-to-top-icon"
-        src="~assets/images/icons/white-accordion-up.svg"
-        alt="white cheveron icon"
-        style="max-width: 30px; height: auto; margin: 15px 20px 25px 20px"
-      />
+      <div class="footer-btt-icon"></div>
     </a>
     <div class="footer__contents-container">
       <div class="footer__left">
@@ -108,34 +103,29 @@ export default {
 .footer__back-to-top {
   position: absolute;
   background-color: #1d1d1d;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  top: -35px;
-  right: calc(50% - 35px);
+  top: -30px;
+  right: calc(50% - 30px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: top 0.25s ease-in-out;
-  -moz-transition: top 0.25s ease-in-out;
-  -webkit-transition: top 0.25s ease-in-out;
-  transition: border 0.25s ease-in-out;
-  -moz-transition: border 0.25s ease-in-out;
-  -webkit-transition: border 0.25s ease-in-out;
+  border: 1px solid #fff;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  background-image: url(~@/assets/images/icons/accordion-up-white.svg);
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  background-position: center;
 }
 
 .footer__back-to-top:hover {
-  top: -40px;
+  top: -35px;
   border: 1px solid #e1851b;
-}
-
-.footer__back-to-top-icon {
-  max-width: 50px;
-  height: auto;
-  margin: auto;
-  background-image: url(~@/assets/images/icons/white-accordion-up.svg);
-  background-size: cover;
+  background-image: url(~@/assets/images/icons/accordion-up-orange.svg);
 }
 
 @media only screen and (max-width: 680px) {
