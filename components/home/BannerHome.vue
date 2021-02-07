@@ -15,6 +15,15 @@
                   >&nbsp;</span
                 >
               </h2>
+              <div class="banner-home__btn-container">
+                <a
+                  href="https://shop.secretdrinksclub.com/collections/all"
+                  class="banner-homer-btn"
+                  >Get the box</a
+                ><a href="#join" class="banner-homer-btn btn-style-2"
+                  >Join the club</a
+                >
+              </div>
             </div>
             <div class="banner-home__logo-container">
               <img
@@ -184,6 +193,7 @@ export default {
   width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .banner-home__title {
@@ -208,6 +218,43 @@ export default {
   span.cursor.typing {
     animation: none;
   }
+}
+
+.banner-home__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.banner-homer-btn {
+  display: inline-block;
+  background: #e1851b;
+  border: solid 2px #e1851b;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 13px 30px;
+  margin: 10px 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+
+.banner-homer-btn.btn-style-2 {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.banner-homer-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.banner-homer-btn.btn-style-2:hover {
+  background: #e1851b;
 }
 
 @keyframes cursorBlink {
@@ -306,6 +353,10 @@ export default {
   .banner-home__title {
     font-size: 42px;
   }
+
+  .banner-home__btn-container {
+    margin: 20px auto 0 auto;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -313,7 +364,7 @@ export default {
     width: 260px;
     margin: auto;
   }
-  
+
   .banner-home,
   .banner-home__img-container,
   .banner-home__img-filter,
@@ -332,6 +383,12 @@ export default {
   .banner-home__content-container {
     padding-top: 15px;
   }
+
+  .banner-home__btn-container {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -342,11 +399,10 @@ export default {
   .banner-home__title {
     font-size: 38px;
   }
-  
+
   .banner-home__content-container {
     padding-top: 25px;
   }
-
 }
 
 @media only screen and (max-width: 305px) {
