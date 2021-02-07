@@ -120,10 +120,14 @@ export default {
   transition: top 0.25s ease-in-out;
   -moz-transition: top 0.25s ease-in-out;
   -webkit-transition: top 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
+  -moz-transition: border 0.25s ease-in-out;
+  -webkit-transition: border 0.25s ease-in-out;
 }
 
 .footer__back-to-top:hover {
   top: -40px;
+  border: 1px solid #e1851b;
 }
 
 .footer__back-to-top-icon {
