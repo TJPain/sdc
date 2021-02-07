@@ -118,7 +118,7 @@ export default {
   -webkit-transition: all 0.6s ease-in-out;
   background-image: url(~@/assets/images/icons/accordion-up-white.svg);
   background-repeat: no-repeat;
-  background-size: 30px auto;
+  background-size: 25px auto;
   background-position: center;
 }
 
