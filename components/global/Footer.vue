@@ -105,7 +105,7 @@ export default {
   background-color: #1d1d1d;
   height: 60px;
   width: 60px;
-  border-radius: 50%;
+  border-radius: 30px;
   top: -30px;
   right: calc(50% - 30px);
   display: flex;
@@ -123,9 +123,10 @@ export default {
 }
 
 .footer__back-to-top:hover {
-  top: -35px;
+  top: -40px;
   border: 1px solid #e1851b;
   background-image: url(~@/assets/images/icons/accordion-up-orange.svg);
+  height: 70px;
 }
 
 @media only screen and (max-width: 680px) {

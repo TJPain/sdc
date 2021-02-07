@@ -8,7 +8,7 @@
           src="https://cdn.lightwidget.com/widgets/8329c9d2d2ae5485b5e4f3f1d3a21963.html"
           scrolling="no"
           allowtransparency="true"
-          class="lightwidget-widget instagram-feed__instagram-frame"
+          class="lightwidget-widget"
           style="width: 100%; border: 0; overflow: hidden"
         ></iframe>
         <img
